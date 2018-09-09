@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/screenback">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/eUSerAltName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center_vertical"
+        android:hint="Alternate first name"
+        android:inputType="none"
+        android:letterSpacing="0.02"
+        android:maxLines="1"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:textColorHint="#99FFFFFF"
+        android:backgroundTint="#99FFFFFF"></EditText>
+
+
+    <RadioButton
+        android:id="@+id/radiobtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        style="@style/RadioButtonStyle"
+        android:gravity="center"
+        android:paddingRight="5dp" />
+
+</FrameLayout>
+
+
+</LinearLayout>

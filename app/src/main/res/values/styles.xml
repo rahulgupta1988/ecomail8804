@@ -1,0 +1,227 @@
+<resources>
+
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="primaryNavigationBGColor">@color/ecomail_navigation</item>
+        <item name="primaryTextColor">@color/ecomail_primary_txt</item>
+        <item name="loginLogo">@drawable/login_logo</item>
+        <item name="screenback">@color/ecomail_scree_back</item>
+        <item name="secandarytxt">@color/ecomail_txtsecondary</item>
+        <item name="boldtxt">@color/ecomail_txtsbold</item>
+        <item name="primaryButton">@color/ecomail_primary_btn</item>
+        <item name="baseline">@color/ecomail_baseline</item>
+        <item name="themeprimarycolor">@color/ecomail_theme_txt</item>
+        <item name="navigationIcon">@color/ecomail_navuiagtion_icon</item>
+        <item name="cardfirsttxt">@color/ecomail_cardfirsttxt</item>
+        <item name="cardsectxt">@color/ecomail_cardsectxt</item>
+        <item name="cardduedate">@color/ecomail_cardduedatetxt</item>
+        <item name="cardscheduletxt">@color/ecomail_cardscheduletxt</item>
+        <item name="cardrecipBacktxt">@color/ecomail_cardrecipBacktxt</item>
+        <item name="cardrecipNametxt">@color/ecomail_cardrecipNametxt</item>
+        <item name="cardarraowdownbg">@color/ecomail_cardarraowdownbg</item>
+        <item name="cardarraowdown">@color/ecomail_cardarraowdown</item>
+        <item name="cardwebactionbg">@color/ecomail_cardwebactionbg</item>
+        <item name="cardwebactiontxt">@color/ecomail_cardwebactiontxt</item>
+        <item name="carddoccreatedatetxt">@color/ecomail_carddoccreatedatetxt</item>
+        <item name="cardarrow_right_vector">@color/ecomail_arrow_right_vector</item>
+        <item name="cardexpandbg">@color/ecomail_cardexpandbg</item>
+        <item name="cardexpandfirsttxt">@color/ecomail_cardexpandfirsttxt</item>
+        <item name="cardexpandsecondtxt">@color/ecomail_cardexpandsecondtxt</item>
+        <item name="cardexpandsduedatetxt">@color/ecomail_cardexpandsduedatetxt</item>
+        <item name="expand_arrow_right_vector">@color/ecomail_expand_arrow_right_vector</item>
+        <item name="cardactive">@color/ecomail_cardactive</item>
+        <item name="carddeactive">@color/ecomail_carddeactive</item>
+        <item name="inboxsortBG">@color/ecomail_inboxsortBG</item>
+        <item name="inboxsortSwipeIC">@color/ecomail_inboxsortSwipeIC</item>
+        <item name="inboxcheckIC">@color/ecomail_inboxcheckIC</item>
+        <item name="navigationIC">@color/ecomail_navigationIC</item>
+        <item name="contentBG">@color/ecomail_contentBG</item>
+        <item name="trashArcIC">@color/ecomail_trashArcIC</item>
+
+
+       <!-- for TextInputLayout-->
+        <item name="android:textColorHint">#99FFFFFF</item>
+        <item name="colorControlNormal">#99FFFFFF</item>
+        <item name="colorControlActivated">#99FFFFFF</item>
+
+    </style>
+
+    <style name="BOATheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/boa_navigation</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="primaryNavigationBGColor">@color/boa_navigation</item>
+        <item name="primaryTextColor">@color/boa_primary_txt</item>
+        <item name="loginLogo">@drawable/boa_login_logo</item>
+        <item name="screenback">@color/boa_scree_back</item>
+        <item name="secandarytxt">@color/boa_txtsecondary</item>
+        <item name="boldtxt">@color/boa_txtsbold</item>
+        <item name="primaryButton">@color/boa_primary_btn</item>
+        <item name="baseline">@color/boa_baseline</item>
+        <item name="themeprimarycolor">@color/boa_theme_txt</item>
+        <item name="navigationIcon">@color/boa_navuiagtion_icon</item>
+        <item name="cardfirsttxt">@color/boa_cardfirsttxt</item>
+        <item name="cardsectxt">@color/boa_cardsectxt</item>
+        <item name="cardduedate">@color/boa_cardduedatetxt</item>
+        <item name="cardscheduletxt">@color/boa_cardscheduletxt</item>
+        <item name="cardrecipBacktxt">@color/boa_cardrecipBacktxt</item>
+        <item name="cardrecipNametxt">@color/boa_cardrecipNametxt</item>
+        <item name="cardarraowdownbg">@color/boa_cardarraowdownbg</item>
+        <item name="cardarraowdown">@color/boa_cardarraowdown</item>
+        <item name="cardwebactionbg">@color/boa_cardwebactionbg</item>
+        <item name="cardwebactiontxt">@color/boa_cardwebactiontxt</item>
+        <item name="carddoccreatedatetxt">@color/boa_carddoccreatedatetxt</item>
+        <item name="cardarrow_right_vector">@color/boa_arrow_right_vector</item>
+        <item name="cardexpandbg">@color/boa_cardexpandbg</item>
+        <item name="cardexpandfirsttxt">@color/boa_cardexpandfirsttxt</item>
+        <item name="cardexpandsecondtxt">@color/boa_cardexpandsecondtxt</item>
+        <item name="cardexpandsduedatetxt">@color/boa_cardexpandsduedatetxt</item>
+        <item name="expand_arrow_right_vector">@color/boa_expand_arrow_right_vector</item>
+        <item name="cardactive">@color/boa_cardactive</item>
+        <item name="carddeactive">@color/boa_carddeactive</item>
+        <item name="inboxsortBG">@color/boa_inboxsortBG</item>
+        <item name="inboxsortSwipeIC">@color/boa_inboxsortSwipeIC</item>
+        <item name="inboxcheckIC">@color/boa_inboxcheckIC</item>
+        <item name="navigationIC">@color/boa_navigationIC</item>
+        <item name="contentBG">@color/boa_contentBG</item>
+        <item name="trashArcIC">@color/boa_trashArcIC</item>
+
+        <!-- for TextInputLayout-->
+        <item name="android:textColorHint">@color/boa_txtsbold</item>
+        <item name="colorControlNormal">@color/boa_txtsbold</item>
+        <item name="colorControlActivated">@color/boa_txtsbold</item>
+
+    </style>
+
+
+    <style name="CITIZENSBANKTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/citz_navigation</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="primaryNavigationBGColor">@color/citz_navigation</item>
+        <item name="primaryTextColor">@color/citz_primary_txt</item>
+        <item name="loginLogo">@drawable/citz_login_logo</item>
+        <item name="screenback">@color/citz_scree_back</item>
+        <item name="secandarytxt">@color/citz_txtsecondary</item>
+        <item name="boldtxt">@color/citz_txtsbold</item>
+        <item name="primaryButton">@color/citz_primary_btn</item>
+        <item name="baseline">@color/citz_baseline</item>
+        <item name="themeprimarycolor">@color/citz_theme_txt</item>
+        <item name="navigationIcon">@color/citz_navuiagtion_icon</item>
+        <item name="cardfirsttxt">@color/citz_cardfirsttxt</item>
+        <item name="cardsectxt">@color/citz_cardsectxt</item>
+        <item name="cardduedate">@color/citz_cardduedatetxt</item>
+        <item name="cardscheduletxt">@color/citz_cardscheduletxt</item>
+        <item name="cardrecipBacktxt">@color/citz_cardrecipBacktxt</item>
+        <item name="cardrecipNametxt">@color/citz_cardrecipNametxt</item>
+        <item name="cardarraowdownbg">@color/citz_cardarraowdownbg</item>
+        <item name="cardarraowdown">@color/citz_cardarraowdown</item>
+        <item name="cardwebactionbg">@color/citz_cardwebactionbg</item>
+        <item name="cardwebactiontxt">@color/citz_cardwebactiontxt</item>
+        <item name="carddoccreatedatetxt">@color/citz_carddoccreatedatetxt</item>
+        <item name="cardarrow_right_vector">@color/citz_arrow_right_vector</item>
+        <item name="cardexpandbg">@color/citz_cardexpandbg</item>
+        <item name="cardexpandfirsttxt">@color/citz_cardexpandfirsttxt</item>
+        <item name="cardexpandsecondtxt">@color/citz_cardexpandsecondtxt</item>
+        <item name="cardexpandsduedatetxt">@color/citz_cardexpandsduedatetxt</item>
+        <item name="expand_arrow_right_vector">@color/citz_expand_arrow_right_vector</item>
+        <item name="cardactive">@color/citz_cardactive</item>
+        <item name="carddeactive">@color/citz_carddeactive</item>
+        <item name="inboxsortBG">@color/citz_inboxsortBG</item>
+        <item name="inboxsortSwipeIC">@color/citz_inboxsortSwipeIC</item>
+        <item name="inboxcheckIC">@color/citz_inboxcheckIC</item>
+        <item name="navigationIC">@color/citz_navigationIC</item>
+        <item name="contentBG">@color/citz_contentBG</item>
+        <item name="trashArcIC">@color/citz_trashArcIC</item>
+
+
+        <!-- for TextInputLayout-->
+        <item name="android:textColorHint">@color/citz_txtsbold</item>
+        <item name="colorControlNormal">@color/citz_txtsbold</item>
+        <item name="colorControlActivated">@color/citz_txtsbold</item>
+
+    </style>
+
+
+    <style name="SwitchStyle" parent="Theme.AppCompat.Light">
+
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#00E8DC</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#9DC3ED</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#9DC3ED</item>
+    </style>
+    <style name="DialogTheme">
+        <item name="android:windowEnterAnimation">@anim/bottom_top</item>
+        <item name="android:windowExitAnimation">@anim/top_bottom</item>
+    </style>
+
+
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">#99FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">#99FFFFFF</item>
+        <item name="colorControlNormal">#99FFFFFF</item>
+        <item name="colorControlActivated">#99FFFFFF</item>
+    </style>
+
+
+    <style name="TextLabel_boa" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/boa_txtsbold</item>
+        <item name="android:textSize">15sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/boa_txtsbold</item>
+        <item name="colorControlNormal">@color/boa_txtsbold</item>
+        <item name="colorControlActivated">@color/boa_txtsbold</item>
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style name="RadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@drawable/compound_button_color_selector</item>
+        <item name="buttonTint">@drawable/compound_button_color_selector</item>
+    </style>
+
+    <style name="CustomScroll">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:scrollbarThumbVertical">@drawable/know</item>
+        <item name="android:scrollbarTrackVertical">@drawable/custom_track</item>
+    </style>
+
+    <style name="CustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">13dp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/contentBG"
+    android:padding="16dp">
+
+
+    <RelativeLayout
+        android:id="@+id/relPersonalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/imgInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/info_vector"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_toRightOf="@+id/imgInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personal Information"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="?attr/themeprimarycolor"
+            android:letterSpacing="0.01"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/relPersonalInfo"
+        android:id="@+id/relAddress"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/imgadress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/addresses_vector"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_toRightOf="@+id/imgadress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Addresses"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="?attr/themeprimarycolor"
+            android:letterSpacing="0.01"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/relAddress"
+        android:id="@+id/relAccounts"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/imgaccounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/payments_vector"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/imgaccounts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Accounts"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="?attr/themeprimarycolor"
+            android:letterSpacing="0.01"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/relAccounts"
+        android:id="@+id/relRecipents"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/imgRecipents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/recipents_vector"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_toRightOf="@+id/imgRecipents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recipents"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="?attr/themeprimarycolor"
+            android:letterSpacing="0.01"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/relRecipents"
+        android:id="@+id/relSecurity"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/imgSecurity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/security_vector"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_toRightOf="@+id/imgSecurity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Security"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="?attr/themeprimarycolor"
+            android:letterSpacing="0.01"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

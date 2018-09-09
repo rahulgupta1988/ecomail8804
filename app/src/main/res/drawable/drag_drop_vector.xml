@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:viewportWidth="22"
+    android:viewportHeight="10"
+    android:width="22dp"
+    android:height="10dp">
+    <path
+        android:pathData="M0 0L22 0 22 2 0 2 0 0ZM0 4L22 4 22 6 0 6 0 4Zm22 4l-22 0 0 2 22 0 0 -2z"
+        android:fillColor="?attr/inboxsortSwipeIC"
+        android:fillAlpha="0.6" />
+</vector>

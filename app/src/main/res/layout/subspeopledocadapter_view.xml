@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentlay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/screenback"
+    android:orientation="vertical">
+
+      <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/doc_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/doc_vector"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+
+            <TextView
+                android:layout_toRightOf="@+id/doc_ic"
+                android:id="@+id/txtDocName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Doc 1"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/txt_rejectCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/subscription_rejected" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_ft"
+                    android:letterSpacing="0.01"
+                    android:text="Rejected"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="14dp">
+
+              <ImageView
+                  android:id="@+id/doc_ic1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/doc_vector"
+                  android:layout_alignParentLeft="true"
+                  android:layout_centerVertical="true"
+                  android:visibility="invisible"/>
+
+              <TextView
+                  android:layout_toRightOf="@+id/doc_ic1"
+                  android:id="@+id/txt_actionable"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/open_sans_ft"
+                  android:letterSpacing="0.01"
+                  android:text="Actionable"
+                  android:textColor="#99FFFFFF"
+                  android:textSize="13sp"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="10dp"/>
+
+              <android.support.v7.widget.SwitchCompat
+                  android:layout_toRightOf="@+id/txt_actionable"
+                  android:id="@+id/switch_actionable"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:theme="@style/SwitchStyle"
+                  android:layout_marginLeft="10dp"/>
+
+
+
+              <TextView
+                  android:layout_toLeftOf="@+id/switch_Share"
+                  android:id="@+id/txt_Share"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/open_sans_ft"
+                  android:letterSpacing="0.01"
+                  android:text="Share"
+                  android:textColor="#99FFFFFF"
+                  android:textSize="13sp"
+                  android:layout_centerVertical="true"
+                  android:layout_marginRight="10dp"/>
+
+              <android.support.v7.widget.SwitchCompat
+                  android:layout_alignParentRight="true"
+                  android:id="@+id/switch_Share"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:theme="@style/SwitchStyle" />
+
+
+
+          </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

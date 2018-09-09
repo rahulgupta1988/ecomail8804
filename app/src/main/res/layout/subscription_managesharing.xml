@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/lay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/primaryNavigationBGColor"
+            android:elevation="10dp"
+            android:padding="16dp">
+
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/left_arrow_vector" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Sharing"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lay1"
+            android:orientation="vertical">
+
+            <include layout="@layout/managesharing_childview" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/screenback"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".1"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:letterSpacing="0.01"
+                    android:text="Persons"
+                    android:textColor="#00E8DC"
+                    android:textSize="12sp"
+
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/sharingpersionlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".6"></android.support.v7.widget.RecyclerView>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="1"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_weight=".3"
+                        android:id="@+id/txtAddPeople"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:letterSpacing="0.01"
+                        android:text="Add Persons"
+                        android:textColor="#00E8DC"
+                        android:textSize="12sp" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_weight=".7"
+                        android:id="@+id/userIDWrapper"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <EditText
+                            android:id="@+id/etUserID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center_vertical"
+                            android:hint="Ecomail ID"
+                            android:inputType="text"
+                            android:letterSpacing="0.02"
+                            android:maxLines="1"
+                            android:paddingBottom="10dp"
+                            android:textColor="?attr/secandarytxt"
+                            android:textColorHint="?attr/boldtxt"
+                            android:textSize="15sp"></EditText>
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

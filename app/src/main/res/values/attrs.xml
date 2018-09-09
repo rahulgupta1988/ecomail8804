@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="primaryNavigationBGColor" format="color"/>
+    <attr name="primaryTextColor" format="reference"/>
+    <attr name="loginLogo" format="reference"/>
+    <attr name="screenback" format="reference"/>
+    <attr name="secandarytxt" format="reference"/>
+    <attr name="boldtxt" format="reference"/>
+    <attr name="primaryButton" format="reference"/>
+    <attr name="baseline" format="reference"/>
+    <attr name="themeprimarycolor" format="reference"/>
+    <attr name="navigationIcon" format="reference"/>
+    <attr name="cardfirsttxt" format="color"/>
+    <attr name="cardsectxt" format="color"/>
+    <attr name="cardduedate" format="color"/>
+    <attr name="cardscheduletxt" format="color"/>
+    <attr name="cardrecipBacktxt" format="color"/>
+    <attr name="cardrecipNametxt" format="color"/>
+    <attr name="cardarraowdownbg" format="color"/>
+    <attr name="cardarraowdown" format="color"/>
+    <attr name="cardwebactionbg" format="color"/>
+    <attr name="cardwebactiontxt" format="color"/>
+    <attr name="carddoccreatedatetxt" format="color"/>
+    <attr name="cardarrow_right_vector" format="color"/>
+    <attr name="cardexpandbg" format="color"/>
+    <attr name="cardexpandfirsttxt" format="color"/>
+    <attr name="cardexpandsecondtxt" format="color"/>
+    <attr name="cardexpandsduedatetxt" format="color"/>
+    <attr name="expand_arrow_right_vector" format="color"/>
+    <attr name="cardactive" format="color"/>
+    <attr name="carddeactive" format="color"/>
+    <attr name="inboxsortBG" format="color"/>
+    <attr name="inboxsortSwipeIC" format="color"/>
+    <attr name="inboxcheckIC" format="reference"/>
+    <attr name="navigationIC" format="reference"/>
+    <attr name="contentBG" format="reference"/>
+    <attr name="trashArcIC" format="reference"/>
+
+
+
+
+</resources>

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/screenback">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/headerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="10dp">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/left_arrow_vector"/>
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Pay"
+                android:textColor="#041C2C"
+                android:textSize="19sp"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_below="@+id/headerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_amount"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$3,087.56"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textColor="#FFFFFF"
+                    android:letterSpacing="0.01" />
+
+                <TextView
+                    android:layout_below="@+id/txt_amount"
+                    android:id="@+id/txt_dueDate"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Due on Apr 26, 2016"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="#99FFFFFF"
+                    android:letterSpacing="0.01" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Amount"
+                android:textSize="12sp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="#00E8DC"
+                android:letterSpacing="0.01"
+                android:layout_marginTop="30dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Full"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="#99FFFFFF"
+                    android:letterSpacing="0.01" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/txt_fullpay"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="$3,087.56"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="#FFFFFF"
+                        android:letterSpacing="0.01"
+                        android:layout_centerVertical="true"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_fullpay"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:buttonTint="#FFFFFF"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Minimum"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="#99FFFFFF"
+                    android:letterSpacing="0.01" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/txt_minpay"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="$3,087.56"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textColor="#FFFFFF"
+                        android:letterSpacing="0.01"
+                        android:layout_centerVertical="true"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_minpay"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:buttonTint="#FFFFFF"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="#99FFFFFF"
+                    android:letterSpacing="0.01" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/txt_otherpayamount"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="15sp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textColor="#99FFFFFF"
+                        android:letterSpacing="0.01"
+                        android:layout_centerVertical="true"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_otherpayamount"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:buttonTint="#FFFFFF"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:weightSum="1">
+            <View
+                android:layout_weight=".9"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#99FFFFFF"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="12dp"/>
+
+         </LinearLayout>
+            </LinearLayout>
+
+
+
+            // second view
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Date"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textColor="#00E8DC"
+                    android:letterSpacing="0.01"
+                    android:layout_marginTop="30dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Today"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="#99FFFFFF"
+                        android:letterSpacing="0.01" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/txt_todayDate"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jan 02, 2018"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:textColor="#FFFFFF"
+                            android:letterSpacing="0.01"
+                            android:layout_centerVertical="true"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_todayDate"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:buttonTint="#FFFFFF"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Minimum"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="#99FFFFFF"
+                        android:letterSpacing="0.01" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/txt_minDate"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Apr 26, 2016"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:textColor="#FFFFFF"
+                            android:letterSpacing="0.01"
+                            android:layout_centerVertical="true"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_minDate"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:buttonTint="#FFFFFF"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="#99FFFFFF"
+                        android:letterSpacing="0.01" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/txt_setDate"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Set Date"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:textColor="#99FFFFFF"
+                            android:letterSpacing="0.01"
+                            android:layout_centerVertical="true"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_setDate"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:buttonTint="#FFFFFF"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Sources"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textColor="#00E8DC"
+                    android:letterSpacing="0.01"
+                    android:layout_marginTop="30dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_cardname"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Credit Card №1"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textColor="#FFFFFF"
+                        android:letterSpacing="0.01" />
+
+                        <TextView
+                            android:layout_toRightOf="@+id/txt_cardname"
+                            android:id="@+id/txt_changeCard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Change"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:textColor="#99FFFFFF"
+                            android:letterSpacing="0.01"
+                            android:layout_marginLeft="20dp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/txt_creditAnount"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="$10,000.00"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:textColor="#FFFFFF"
+                            android:letterSpacing="0.01"
+                            android:layout_centerVertical="true"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_credite"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:buttonTint="#FFFFFF"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_paylay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:gravity="bottom|center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnPay"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_rect"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="PAY"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:letterSpacing="0.01"/>
+            </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/btn_updatetrashlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:gravity="bottom|center"
+                android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/btn_rect"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="UPDATE"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:letterSpacing="0.01"/>
+
+
+                <Button
+                    android:id="@+id/btnTrash"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/btnSignIn"
+                    android:layout_weight=".5"
+                    android:background="@drawable/btn_rect_trash"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="TRASH"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:letterSpacing="0.01"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

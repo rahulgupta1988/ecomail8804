@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/parentlay"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/inboxsortBG"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="18dp"
+    android:paddingBottom="18dp"
+    android:elevation="50dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtsortstr"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Advertising"
+                android:textSize="15sp"
+                android:fontFamily="@font/open_sans"
+                android:textColor="?attr/themeprimarycolor"
+                android:letterSpacing="0.01"
+                android:layout_centerVertical="true"/>
+
+        <CheckBox
+            android:layout_toLeftOf="@+id/imgDrag"
+            android:id="@+id/checkCmp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:buttonTint="?attr/inboxcheckIC"
+            android:layout_marginRight="34dp"/>
+
+
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/imgDrag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/drag_drop_vector"/>
+
+        </RelativeLayout>
+
+
+
+
+</LinearLayout>

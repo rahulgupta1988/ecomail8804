@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/screenback">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/lay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/primaryNavigationBGColor"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Settings"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_below="@+id/lay1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablay"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#FFFFFF"
+                app:tabIndicatorHeight="3dp"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                app:tabTextAppearance="@style/CustomTabText">
+
+            </android.support.design.widget.TabLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+               >
+
+
+
+                <RelativeLayout
+                    android:layout_weight=".73"
+                    android:layout_alignParentTop="true"
+                    android:layout_above="@+id/txtAppVersion"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="6dp">
+
+
+                  <include
+                      android:id="@+id/viewAccount"
+                      layout="@layout/setting_account_view"
+                      android:visibility="visible"
+                      />
+                    <include
+                        android:id="@+id/viewEcomail"
+                        layout="@layout/setting_ecomail_view"
+                        android:visibility="gone"/>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_weight=".14"
+                    android:layout_above="@+id/txtLogout"
+                    android:gravity="center"
+                    android:id="@+id/txtAppVersion"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Version \n71222.2.2"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="?attr/secandarytxt"
+                    android:letterSpacing="0.01"
+                    android:layout_gravity="center"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_weight=".13"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="10dp"
+                    android:layout_marginBottom="12dp">
+                    <Button
+                        android:id="@+id/txtLogout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_rect"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="LOGOUT"
+                        android:textAllCaps="true"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.01"
+                      />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

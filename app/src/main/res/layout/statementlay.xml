@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="16dp">
+
+    <TextView
+        android:layout_weight=".1"
+        android:id="@+id/you"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="You"
+        android:textSize="10sp"
+        android:fontFamily="@font/open_sans"
+        android:textColor="#5F7296"
+        android:letterSpacing="0.01" />
+
+
+    <TextView
+        android:layout_weight=".21"
+        android:id="@+id/status"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Scheduled"
+        android:textSize="10sp"
+        android:fontFamily="@font/open_sans"
+        android:textColor="#5F7296"
+        android:letterSpacing="0.01" />
+
+    <TextView
+        android:layout_weight=".22"
+        android:id="@+id/date"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Dec. 30 2017"
+        android:textSize="10sp"
+        android:fontFamily="@font/open_sans"
+        android:textColor="#5F7296"
+        android:letterSpacing="0.01" />
+
+    <TextView
+        android:layout_weight=".22"
+        android:id="@+id/amount"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="$5,425.00"
+        android:textSize="10sp"
+        android:fontFamily="@font/open_sans"
+        android:textColor="#5F7296"
+        android:letterSpacing="0.01" />
+
+    <TextView
+        android:layout_weight=".25"
+        android:id="@+id/bank"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Bank Of America"
+        android:textSize="10sp"
+        android:fontFamily="@font/open_sans"
+        android:textColor="#5F7296"
+        android:letterSpacing="0.01" />
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:viewportWidth="19"
+    android:viewportHeight="19"
+    android:width="19dp"
+    android:height="19dp">
+    <group
+        android:rotation="90"
+        android:translateX="19">
+        <path
+            android:pathData="M0 2C0 0.895431 0.895431 0 2 0l15 0c1.1046 0 2 0.895431 2 2l0 15c0 1.1046 -0.8954 2 -2 2L2 19C0.895431 19 0 18.1046 0 17L0 2Z"
+            android:fillColor="?attr/cardarraowdownbg" />
+    </group>
+    <group
+        android:rotation="90"
+        android:translateX="14.9333"
+        android:translateY="5.06665">
+        <path
+            android:pathData="M0.958558 0L0 1.03444 4.14955 5.43333 0 9.83222 0.958558 10.8667 6.06667 5.43333 0.958558 0Z"
+            android:fillColor="?attr/cardarraowdown" />
+    </group>
+    <group
+        android:rotation="90"
+        android:translateX="14.9333"
+        android:translateY="9.06665">
+        <path
+            android:pathData="M0.958558 0L0 1.03444 4.14955 5.43333 0 9.83222 0.958558 10.8667 6.06667 5.43333 0.958558 0Z"
+            android:fillColor="?attr/cardarraowdown" />
+    </group>
+</vector>

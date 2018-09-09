@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/cardactive">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/headerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/primaryNavigationBGColor"
+            android:padding="16dp"
+            android:elevation="10dp">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/left_arrow_vector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Filters"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/img_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_check_vector"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerview"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:id="@+id/company_lay"
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/txtCompanyFilter"
+                    android:layout_toLeftOf="@+id/txtContentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="?attr/themeprimarycolor"
+                    android:letterSpacing="0.01"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/txtCompanyCount"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="?attr/themeprimarycolor"
+                    android:letterSpacing="0.01"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/doctype_lay"
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/txtDocTypeFilter"
+                    android:layout_toLeftOf="@+id/txtContentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Document Type"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="?attr/themeprimarycolor"
+                    android:letterSpacing="0.01"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/txtDocTypeCount"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="?attr/themeprimarycolor"
+                    android:letterSpacing="0.01"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/recip_lay"
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/txtRecipintFilter"
+                    android:layout_toLeftOf="@+id/txtContentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recipents"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="?attr/themeprimarycolor"
+                    android:letterSpacing="0.01"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/txtRecipintCount"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="?attr/themeprimarycolor"
+                    android:letterSpacing="0.01"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="16dp">
+            <Button
+                android:id="@+id/btnClearfilters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rect"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Clear All Filters"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.01"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

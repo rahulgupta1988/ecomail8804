@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentlay"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="?attr/screenback"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/checkBox">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imgRecipent"
+                android:layout_width="54dp"
+                android:layout_height="51dp"
+                android:src="@drawable/defaultimage_vector"
+                app:civ_border_width="0dp"
+                />
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/imgRecipent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp">
+
+                <TextView
+                    android:id="@+id/txtRecipentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="Anton Scotell"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:letterSpacing="0.01"/>
+
+
+                <TextView
+                    android:layout_below="@+id/txtRecipentName"
+                    android:id="@+id/txtNickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Nickname"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="15sp"
+                    android:letterSpacing="0.01"
+                    android:layout_marginTop="1dp"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:buttonTint="#FFFFFF" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

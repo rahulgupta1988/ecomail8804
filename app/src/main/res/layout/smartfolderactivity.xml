@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/screenback"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/headerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+           android:elevation="10dp">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/left_arrow_vector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Add Smart Folder"
+                android:textColor="#041C2C"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/headerview"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:id="@+id/folderNameLay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".85"
+                android:visibility="visible">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/etSmartFolderName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:hint="Smart Folder Name"
+                        android:inputType="text"
+                        android:letterSpacing="0.02"
+                        android:maxLines="1"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:textSize="15sp"></EditText>
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/docTypeLay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".85"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:letterSpacing="0.01"
+                    android:text="Document Type"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_below="@+id/txtview"
+                    android:id="@+id/listDocTypes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/docgroupLay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".85"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtviewgp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:letterSpacing="0.01"
+                    android:text="Document Group Name"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_below="@+id/txtviewgp"
+                    android:id="@+id/listDocGroups"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/recipentsLay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".85"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtviewrecip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:letterSpacing="0.01"
+                    android:text="Recipents"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_below="@+id/txtviewrecip"
+                    android:id="@+id/listRecipents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/folderLay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".85"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtviewFolder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:letterSpacing="0.01"
+                    android:text="Folders"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_below="@+id/txtviewFolder"
+                    android:id="@+id/listFolders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_weight=".15"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="bottom|center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/white_rect_btn"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:letterSpacing="0.01"
+                    android:text="CANCEL"
+                    android:textAllCaps="true"
+                    android:textColor="#0057B8"
+                    android:textSize="15sp" />
+
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/btnSignIn"
+                    android:layout_weight=".5"
+                    android:background="@drawable/btn_rect"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:letterSpacing="0.01"
+                    android:text="NEXT"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

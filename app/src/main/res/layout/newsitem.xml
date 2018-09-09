@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/imgNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/defaultimage_vector"></ImageView>
+
+    <RelativeLayout
+        android:layout_toRightOf="@+id/imgNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp">
+
+
+        <TextView
+            android:id="@+id/txtNewsDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:letterSpacing="0.01"
+            android:text="Dec 28 2017, 22:19"
+            android:textSize="13dp"
+            android:textColor="#5F7296"/>
+
+
+        <TextView
+            android:layout_below="@+id/txtNewsDate"
+            android:id="@+id/txtNewsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semibold"
+            android:letterSpacing="0.01"
+            android:text="Humanitarian Affairs Advisor"
+            android:textSize="15dp"
+            android:textColor="#041C2C"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_below="@+id/txtNewsTitle"
+            android:id="@+id/txtNewsDecrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:letterSpacing="0.01"
+            android:text="Part of MSF International Humanitarian Diplomacy Team (HDT), formely know as the"
+            android:textSize="13dp"
+            android:textColor="#5F7296"
+            android:maxLines="3"
+            android:ellipsize="end"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

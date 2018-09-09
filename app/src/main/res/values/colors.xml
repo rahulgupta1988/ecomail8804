@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0057B8</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#02A1FF</color>
+
+    // login page
+
+
+
+
+    <color name="inbox_active">#0057B8</color>
+    <color name="inbox_deactive">#FFFFFF</color>
+    <color name="scollbarColor">#99BCE3</color>
+
+
+    // swipe options
+    <color name="pay_color">#02A1FF</color>
+    <color name="inbox_color">#0057B8</color>
+    <color name="trash_color">#F2292F</color>
+    <color name="archive_color">#00B2A9</color>
+    <color name="more_color">#B0BCD4</color>
+
+
+
+
+    // bottomsheet text
+
+    <color name="sheet_txt_color">#041C2C</color>
+
+
+
+    // theme EcoMail
+    <color name="ecomail_navigation">#FFFFFF</color>
+    <color name="ecomail_primary_txt">#041C2C</color>
+    <color name="ecomail_scree_back">#0057B8</color>
+    <color name="ecomail_contentBG">#0057B8</color>
+    <color name="ecomail_txtsbold">#99FFFFFF</color>
+    <color name="ecomail_txtsecondary">#ffffff</color>
+    <color name="ecomail_primary_btn">#02A1FF</color>
+    <color name="ecomail_baseline">#E1E6ED</color>
+    <color name="ecomail_theme_txt">#FFFFFF</color>
+    <color name="ecomail_navuiagtion_icon">#0057B8</color>
+
+    <color name="ecomail_cardfirsttxt">#041C2C</color>
+    <color name="ecomail_cardsectxt">#5F7296</color>
+    <color name="ecomail_cardduedatetxt">#00B2A9</color>
+    <color name="ecomail_cardscheduletxt">#FFFFFF</color>
+    <color name="ecomail_cardrecipBacktxt">#748BB8</color>
+    <color name="ecomail_cardrecipNametxt">#FFFFFF</color>
+    <color name="ecomail_cardarraowdownbg">#FFFFFF</color>
+    <color name="ecomail_cardarraowdown">#0057b8</color>
+    <color name="ecomail_cardwebactionbg">#FFFFFF</color>
+    <color name="ecomail_cardwebactiontxt">#0057B8</color>
+    <color name="ecomail_carddoccreatedatetxt">#8A000000</color>
+    <color name="ecomail_arrow_right_vector">#a3b5d6</color>
+    <color name="ecomail_expand_arrow_right_vector">#99FFFFFF</color>
+    <color name="ecomail_cardexpandbg">#0057B8</color>
+    <color name="ecomail_cardexpandfirsttxt">#FFFFFF</color>
+    <color name="ecomail_cardexpandsecondtxt">#99FFFFFF</color>
+    <color name="ecomail_cardexpandsduedatetxt">#00E8DC</color>
+    <color name="ecomail_cardactive">#0057B8</color>
+    <color name="ecomail_carddeactive">#FFFFFF</color>
+
+    <color name="ecomail_inboxsortBG">#0050A9</color>
+    <color name="ecomail_inboxsortSwipeIC">#ffffff</color>
+    <color name="ecomail_inboxcheckIC">#ffffff</color>
+    <color name="ecomail_navigationIC">#ffffff</color>
+    <color name="ecomail_trashArcIC">#EEEEEE</color>
+
+
+
+
+
+
+
+
+
+    // theme bank of america
+    <color name="boa_navigation">#DC1431</color>
+    <color name="boa_primary_txt">#FFFFFF</color>
+    <color name="boa_scree_back">#F7F7F7</color>
+    <color name="boa_contentBG">#FFFFFF</color>
+    <color name="boa_txtsbold">#000000</color>
+    <color name="boa_txtsecondary">#999999</color>
+    <color name="boa_primary_btn">#0073CF</color>
+    <color name="boa_baseline">#D1D1D1</color>
+    <color name="boa_theme_txt">#000000</color>
+    <color name="boa_navuiagtion_icon">#FFFFFF</color>
+
+
+    <color name="boa_cardfirsttxt">#000000</color>
+    <color name="boa_cardsectxt">#999999</color>
+    <color name="boa_cardduedatetxt">#218748</color>
+    <color name="boa_cardscheduletxt">#FFFFFF</color>
+    <color name="boa_cardrecipBacktxt">#E5E5E5</color>
+    <color name="boa_cardrecipNametxt">#000000</color>
+    <color name="boa_cardarraowdownbg">#000000</color>
+    <color name="boa_cardarraowdown">#FFFFFF</color>
+    <color name="boa_cardwebactionbg">#0073CF</color>
+    <color name="boa_cardwebactiontxt">#FFFFFF</color>
+    <color name="boa_carddoccreatedatetxt">#999999</color>
+    <color name="boa_arrow_right_vector">#FFFFFF</color>
+    <color name="boa_expand_arrow_right_vector">#D1D1D1</color>
+    <color name="boa_cardexpandbg">#FFFFFF</color>
+    <color name="boa_cardexpandfirsttxt">#000000</color>
+    <color name="boa_cardexpandsecondtxt">#999999</color>
+    <color name="boa_cardexpandsduedatetxt">#F2C94C</color>
+    <color name="boa_cardactive">#FFFFFF</color>
+    <color name="boa_carddeactive">#FFFFFF</color>
+
+    <color name="boa_inboxsortBG">#F7F7F7</color>
+    <color name="boa_inboxsortSwipeIC">#000000</color>
+    <color name="boa_inboxcheckIC">#000000</color>
+
+    <color name="boa_navigationIC">#B0B0B0</color>
+    <color name="boa_trashArcIC">#000000</color>
+
+
+    // theme Citizens bank
+    <color name="citz_navigation">#00945F</color>
+    <color name="citz_primary_txt">#FFFFFF</color>
+    <color name="citz_scree_back">#F7F7F7</color>
+    <color name="citz_contentBG">#FFFFFF</color>
+    <color name="citz_txtsbold">#000000</color>
+    <color name="citz_txtsecondary">#999999</color>
+    <color name="citz_primary_btn">#E97300</color>
+    <color name="citz_baseline">#D1D1D1</color>
+    <color name="citz_theme_txt">#000000</color>
+    <color name="citz_navuiagtion_icon">#FFFFFF</color>
+
+
+    <color name="citz_cardfirsttxt">#000000</color>
+    <color name="citz_cardsectxt">#999999</color>
+    <color name="citz_cardduedatetxt">#218748</color>
+    <color name="citz_cardscheduletxt">#FFFFFF</color>
+    <color name="citz_cardrecipBacktxt">#E5E5E5</color>
+    <color name="citz_cardrecipNametxt">#000000</color>
+    <color name="citz_cardarraowdownbg">#000000</color>
+    <color name="citz_cardarraowdown">#FFFFFF</color>
+    <color name="citz_cardwebactionbg">#E97300</color>
+    <color name="citz_cardwebactiontxt">#FFFFFF</color>
+    <color name="citz_carddoccreatedatetxt">#999999</color>
+    <color name="citz_arrow_right_vector">#FFFFFF</color>
+    <color name="citz_expand_arrow_right_vector">#D1D1D1</color>
+    <color name="citz_cardexpandbg">#FFFFFF</color>
+    <color name="citz_cardexpandfirsttxt">#000000</color>
+    <color name="citz_cardexpandsecondtxt">#999999</color>
+    <color name="citz_cardexpandsduedatetxt">#F2C94C</color>
+    <color name="citz_cardactive">#FFFFFF</color>
+    <color name="citz_carddeactive">#FFFFFF</color>
+
+    <color name="citz_inboxsortBG">#F7F7F7</color>
+    <color name="citz_inboxsortSwipeIC">#000000</color>
+    <color name="citz_inboxcheckIC">#000000</color>
+
+    <color name="citz_navigationIC">#000000</color>
+    <color name="citz_trashArcIC">#000000</color>
+
+</resources>

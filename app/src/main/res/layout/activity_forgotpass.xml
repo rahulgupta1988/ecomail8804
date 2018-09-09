@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/screenback">
+
+
+        <include
+            android:id="@+id/email_view"
+            layout="@layout/forgotemail_view"
+            android:visibility="visible"
+            />
+
+        <include
+            android:id="@+id/done_view"
+            layout="@layout/forgotdone_view"
+            android:visibility="gone"
+            />
+
+        <include
+            android:id="@+id/newpass_view"
+            layout="@layout/forgot_newpassword_view"
+            android:visibility="gone"
+            />
+
+        <include
+            android:id="@+id/resetdone_view"
+            layout="@layout/resetdone_view"
+            android:visibility="gone"
+            />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

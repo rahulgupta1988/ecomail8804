@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/parentlay"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="?attr/screenback">
+
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:letterSpacing="0.01"
+            android:text="AAlabama,	AL"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/img_selected"/>
+
+        <ImageView
+            android:id="@+id/img_selected"
+            android:layout_alignParentRight="true"
+            android:layout_width="17.6dp"
+            android:layout_height="17.6dp"
+            android:src="@drawable/ricght_check_white_vect"
+            android:layout_centerVertical="true" />
+
+
+
+</RelativeLayout>

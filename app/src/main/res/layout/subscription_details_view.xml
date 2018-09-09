@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/lay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/primaryNavigationBGColor"
+            android:elevation="10dp"
+            android:padding="16dp">
+
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/left_arrow_vector" />
+
+            <TextView
+                android:id="@+id/txt_suscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Subscriptions Detail"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lay1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/subdeatis_childview" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/screenback"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/txtTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:letterSpacing="0.01"
+                        android:text="Document Groups (2)"
+                        android:textColor="#00E8DC"
+                        android:textSize="12sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:letterSpacing="0.01"
+                            android:text="Debit Card Transaction Summary"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp" />
+
+
+                        <TextView
+                            android:id="@+id/txtDebitSharingCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/open_sans_ft"
+                            android:letterSpacing="0.01"
+                            android:text="Sharing (4)"
+                            android:textColor="#99FFFFFF"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:letterSpacing="0.01"
+                            android:text="Regulatory Notice"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp" />
+
+
+                        <TextView
+                            android:id="@+id/txtNoticeSharingCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/open_sans_ft"
+                            android:letterSpacing="0.01"
+                            android:text="Sharing (4)"
+                            android:textColor="#99FFFFFF"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txtOptionsCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/open_sans_ft"
+                        android:letterSpacing="0.01"
+                        android:text="Sharing (4)"
+                        android:textColor="#99FFFFFF"
+                        android:textSize="13sp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/open_sans_semibold"
+                                android:letterSpacing="0.01"
+                                android:text="Checking Account Monthly"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15sp" />
+
+
+                            <TextView
+                                android:id="@+id/txtaccountCount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/open_sans_ft"
+                                android:letterSpacing="0.01"
+                                android:text="Sharing (4)"
+                                android:textColor="#99FFFFFF"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/switchAccMonmthly"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:theme="@style/SwitchStyle" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:letterSpacing="0.01"
+                            android:text="Wire Transfer Confirmation"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp" />
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/switchWireConfirm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:theme="@style/SwitchStyle" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom|center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnSharing"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn_rect"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:letterSpacing="0.01"
+                            android:text="Manage Sharing"
+                            android:textAllCaps="true"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

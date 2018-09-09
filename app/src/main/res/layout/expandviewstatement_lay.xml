@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/cardexpandbg"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp">
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtPreStatPayDate"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apr. 26, 2015 - Apr. 30, 2016"
+                android:textSize="13sp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="?attr/cardexpandfirsttxt"
+                android:letterSpacing="0.01"
+                android:layout_marginTop="5dp"/>
+
+            <RelativeLayout
+                android:id="@+id/paybanklay"
+                android:layout_below="@+id/txtPreStatPayDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/txtCurrentBalance"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="13sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textColor="?attr/cardexpandfirsttxt"
+                    android:letterSpacing="0.01" />
+
+
+
+                <TextView
+                    android:id="@+id/txtFundingBank"
+                    android:layout_toRightOf="@+id/txtCurrentBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="13sp"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="?attr/cardexpandsecondtxt"
+                    android:letterSpacing="0.01"
+                    android:layout_marginLeft="10dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtScheduleDate"
+                android:layout_below="@+id/paybanklay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scheduled on May 17"
+                android:textSize="13sp"
+                android:fontFamily="@font/open_sans"
+                android:textColor="?attr/cardexpandsecondtxt"
+                android:letterSpacing="0.01"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgArrowStatement"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/expand_arrow_right_vector" />
+
+    </RelativeLayout>
+
+
+

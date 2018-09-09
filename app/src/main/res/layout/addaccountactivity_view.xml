@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/headerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/left_arrow_vector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Accounts Details"
+                android:textColor="#041C2C"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/img_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_check_vector" />
+
+        </RelativeLayout>
+
+
+        <android.support.design.widget.TabLayout
+            android:layout_below="@+id/headerview"
+            android:id="@+id/tablay"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#FFFFFF"
+            app:tabIndicatorHeight="3dp"
+            app:tabGravity="fill"
+            app:tabMode="fixed">
+
+        </android.support.design.widget.TabLayout>
+
+
+            <ScrollView
+                android:id="@+id/scrollLay"
+                android:layout_below="@+id/tablay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:padding="16dp"
+                android:background="?attr/screenback">
+
+
+
+                <RelativeLayout
+                    android:layout_alignParentTop="true"
+                    android:layout_above="@+id/txtAppVersion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="6dp">
+
+
+                    <include
+                        android:id="@+id/viewAccountCredit"
+                        layout="@layout/addcreditcard_view"
+                        android:visibility="visible"/>
+                    <include
+                        android:id="@+id/viewAccountDebit"
+                        layout="@layout/adddebitcard_view"
+                        android:visibility="gone"/>
+
+
+                </RelativeLayout>
+
+
+        </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

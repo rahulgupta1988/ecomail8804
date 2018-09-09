@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/txtActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Actions"
+            android:textColor="@color/sheet_txt_color"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:letterSpacing="0.02"/>
+
+        <TextView
+            android:id="@+id/txtSubscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Manage Subscription"
+            android:textColor="@color/sheet_txt_color"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:letterSpacing="0.02"/>
+
+        <TextView
+            android:id="@+id/txtRules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Rules"
+            android:textColor="@color/sheet_txt_color"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:letterSpacing="0.02"/>
+
+        <TextView
+            android:id="@+id/txtAlerts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Alerts"
+            android:textColor="@color/sheet_txt_color"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:letterSpacing="0.02"/>
+
+        <TextView
+            android:id="@+id/txtWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Website"
+            android:textColor="@color/sheet_txt_color"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:letterSpacing="0.02"/>
+
+
+        <TextView
+            android:id="@+id/txtCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Cancel"
+            android:textColor="#F2292F"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:letterSpacing="0.02"/>
+
+</LinearLayout>

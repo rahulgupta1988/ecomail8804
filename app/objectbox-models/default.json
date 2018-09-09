@@ -1,0 +1,1017 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "4:1659102040718950462",
+      "lastPropertyId": "5:1457155310703869557",
+      "name": "Folder",
+      "properties": [
+        {
+          "id": "1:622449630549360366",
+          "indexId": "1:4067323397014739616",
+          "name": "folderId"
+        },
+        {
+          "id": "2:3583855115966587643",
+          "name": "folderName"
+        },
+        {
+          "id": "3:987126071139153463",
+          "name": "sequenceNo"
+        },
+        {
+          "id": "4:5578660527882296474",
+          "name": "isSelected"
+        },
+        {
+          "id": "5:1457155310703869557",
+          "name": "id"
+        }
+      ],
+      "relations": [
+        {
+          "id": "2:6180309795648636803",
+          "name": "documentToMany"
+        }
+      ]
+    },
+    {
+      "id": "5:7039134405086446394",
+      "lastPropertyId": "8:1194812916840716631",
+      "name": "Recipents",
+      "properties": [
+        {
+          "id": "1:2970338930722348599",
+          "name": "ID"
+        },
+        {
+          "id": "2:844257188961488664",
+          "name": "createDate"
+        },
+        {
+          "id": "3:292351138507256791",
+          "name": "image"
+        },
+        {
+          "id": "4:5640987274329790654",
+          "name": "consumerId"
+        },
+        {
+          "id": "5:6570790954796570311",
+          "name": "networkLoginId"
+        },
+        {
+          "id": "6:8711406152692924886",
+          "name": "recipientName"
+        },
+        {
+          "id": "7:4199330436200304304",
+          "name": "recipientType"
+        },
+        {
+          "id": "8:1194812916840716631",
+          "name": "isSelected"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "6:5751123150842418638",
+      "lastPropertyId": "10:167180311124360817",
+      "name": "FundingSources",
+      "properties": [
+        {
+          "id": "1:7627318044904299286",
+          "name": "ID"
+        },
+        {
+          "id": "2:483423003620824889",
+          "name": "consumerId"
+        },
+        {
+          "id": "3:8750432397856974866",
+          "name": "bankId"
+        },
+        {
+          "id": "4:5125975368085591306",
+          "name": "bankName"
+        },
+        {
+          "id": "5:569359449445503187",
+          "name": "accountTypeId"
+        },
+        {
+          "id": "6:321874091905401055",
+          "name": "accountName"
+        },
+        {
+          "id": "7:8969563471337913455",
+          "name": "accountNumber"
+        },
+        {
+          "id": "8:2411030991125333708",
+          "name": "routingNumber"
+        },
+        {
+          "id": "9:2992936112375600191",
+          "name": "currentBalance"
+        },
+        {
+          "id": "10:167180311124360817",
+          "name": "ledgerBalance"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "7:1394926937215880497",
+      "lastPropertyId": "8:9200909390632441240",
+      "name": "Producer",
+      "properties": [
+        {
+          "id": "1:6307689475110299548",
+          "name": "id"
+        },
+        {
+          "id": "2:7786476696027650063",
+          "name": "isSelected"
+        },
+        {
+          "id": "3:3126999483671281858",
+          "name": "isSelectedForSmartFolder"
+        },
+        {
+          "id": "4:8056323175512450339",
+          "name": "producerId"
+        },
+        {
+          "id": "5:2949525100788845997",
+          "name": "producerName"
+        },
+        {
+          "id": "6:2057122044203172624",
+          "name": "producerLogoLocation"
+        },
+        {
+          "id": "7:3286804406937589333",
+          "name": "startChar"
+        },
+        {
+          "id": "8:9200909390632441240",
+          "name": "isFirst"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "8:6263760342457393279",
+      "lastPropertyId": "4:1226520647672705086",
+      "name": "Actions",
+      "properties": [
+        {
+          "id": "1:1917406157436228761",
+          "name": "id"
+        },
+        {
+          "id": "2:6340405837619771478",
+          "name": "actionId"
+        },
+        {
+          "id": "3:8872062522929081802",
+          "name": "actionDescription"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "10:4216579687077500857",
+      "lastPropertyId": "11:6155122610349022247",
+      "name": "DocumentGroup",
+      "properties": [
+        {
+          "id": "1:629252911693315871",
+          "name": "id"
+        },
+        {
+          "id": "2:8079697103511796501",
+          "name": "documentGroupId"
+        },
+        {
+          "id": "3:7371537253303204789",
+          "name": "documentGroupName"
+        },
+        {
+          "id": "4:5726837496459106067",
+          "name": "gracePeriod"
+        },
+        {
+          "id": "5:954791371326412765",
+          "name": "relationship"
+        },
+        {
+          "id": "6:1982705996425866385",
+          "name": "documentGroupLogoLocation"
+        },
+        {
+          "id": "7:7742165931691100954",
+          "name": "paperlessStatus"
+        },
+        {
+          "id": "8:7622301265658213984",
+          "name": "documentGroupCreater"
+        },
+        {
+          "id": "9:7110633673672693468",
+          "name": "invitationSentId"
+        },
+        {
+          "id": "10:8470823132928180196",
+          "indexId": "10:6092525864977470169",
+          "name": "producerToOneId"
+        },
+        {
+          "id": "11:6155122610349022247",
+          "name": "isSelected"
+        }
+      ],
+      "relations": [
+        {
+          "id": "7:6176457110252925904",
+          "name": "subscriptionToMany"
+        }
+      ]
+    },
+    {
+      "id": "11:2602423411585435131",
+      "lastPropertyId": "42:632592206171521061",
+      "name": "Document",
+      "properties": [
+        {
+          "id": "1:5950920098050389907",
+          "name": "id"
+        },
+        {
+          "id": "2:4886861607068393594",
+          "name": "documentId"
+        },
+        {
+          "id": "4:3944669067125954066",
+          "name": "subscriptionId"
+        },
+        {
+          "id": "5:6588598004622740359",
+          "name": "subscriptionType"
+        },
+        {
+          "id": "6:7409599659504939989",
+          "name": "ownerConsumerId"
+        },
+        {
+          "id": "7:8884611875380968434",
+          "name": "subscriptionCreateDate"
+        },
+        {
+          "id": "8:705416918260972412",
+          "name": "block"
+        },
+        {
+          "id": "9:1892335798103920136",
+          "name": "mandatory"
+        },
+        {
+          "id": "10:4761356365744829363",
+          "name": "subscriptionStartDate"
+        },
+        {
+          "id": "11:6515604130250966313",
+          "name": "cetegoryDescription"
+        },
+        {
+          "id": "12:5246939388380298683",
+          "name": "contentCreationDate"
+        },
+        {
+          "id": "13:3591736364626585148",
+          "name": "contentLocation"
+        },
+        {
+          "id": "14:3756923419081281295",
+          "name": "contentUpdateDat"
+        },
+        {
+          "id": "15:1857077110184775300",
+          "name": "customerIdentifier"
+        },
+        {
+          "id": "16:8472049917817116682",
+          "name": "customerIdentifierType"
+        },
+        {
+          "id": "17:911510531387880373",
+          "name": "displayLocation"
+        },
+        {
+          "id": "18:7777458088933392911",
+          "name": "documentCategroyId"
+        },
+        {
+          "id": "19:8864438642899581469",
+          "name": "documentDate"
+        },
+        {
+          "id": "20:2035586849252418786",
+          "name": "documentGroupId"
+        },
+        {
+          "id": "21:8525684246484699927",
+          "name": "documentGroupName"
+        },
+        {
+          "id": "22:2237239234144406529",
+          "name": "documentLogoLocation"
+        },
+        {
+          "id": "23:8199387143812735759",
+          "name": "documentWebLocation"
+        },
+        {
+          "id": "24:7565941175947796860",
+          "name": "envelopeImage"
+        },
+        {
+          "id": "25:5043208286623024061",
+          "name": "paperlessStatus"
+        },
+        {
+          "id": "26:2071729739209105846",
+          "name": "preiodDescription"
+        },
+        {
+          "id": "27:618385249587929690",
+          "name": "preiodEnd"
+        },
+        {
+          "id": "28:2121448235104961559",
+          "name": "preiodStart"
+        },
+        {
+          "id": "29:6178347342871682427",
+          "name": "primaryAction"
+        },
+        {
+          "id": "30:7531941202410835557",
+          "name": "primaryConsumerId"
+        },
+        {
+          "id": "31:5753245563287910655",
+          "name": "primaryConsumerName"
+        },
+        {
+          "id": "32:4970112750839382681",
+          "name": "producerId"
+        },
+        {
+          "id": "33:1903952400621445662",
+          "name": "producerMessage"
+        },
+        {
+          "id": "34:4908108041963528782",
+          "name": "producerName"
+        },
+        {
+          "id": "35:8198788799714678858",
+          "name": "recipientCosumeId"
+        },
+        {
+          "id": "36:2774029845923072879",
+          "name": "recipientName"
+        },
+        {
+          "id": "37:1014821197921160923",
+          "name": "recipientShortName"
+        },
+        {
+          "id": "38:2594722160554671148",
+          "name": "stateTypeId"
+        },
+        {
+          "id": "39:6394452956666599191",
+          "name": "transmissionId"
+        },
+        {
+          "id": "40:8922804612554343356",
+          "name": "documentName"
+        },
+        {
+          "id": "41:6021163207592458628",
+          "indexId": "3:2214527474104732028",
+          "name": "document_actionsToOneId"
+        },
+        {
+          "id": "42:632592206171521061",
+          "indexId": "8:3317892479176251807",
+          "name": "folderToOneId"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "12:8768532468586799190",
+      "lastPropertyId": "12:2167503304446987459",
+      "name": "Subscription",
+      "properties": [
+        {
+          "id": "1:4574818938663010783",
+          "name": "id"
+        },
+        {
+          "id": "2:3864754054291045572",
+          "name": "block"
+        },
+        {
+          "id": "3:6564518180823829213",
+          "name": "documentGroupId"
+        },
+        {
+          "id": "4:8869186212101785629",
+          "name": "documentId"
+        },
+        {
+          "id": "5:8769186983377994565",
+          "name": "documentName"
+        },
+        {
+          "id": "6:1942644552797496395",
+          "name": "isActionAllowed"
+        },
+        {
+          "id": "7:4058032175345728749",
+          "name": "isMandatory"
+        },
+        {
+          "id": "8:1321189549381219350",
+          "name": "ownerConsumerId"
+        },
+        {
+          "id": "9:1178833201506342749",
+          "name": "subscriptionId"
+        },
+        {
+          "id": "10:5582418182030645792",
+          "name": "subscriptionStartDate"
+        },
+        {
+          "id": "11:5107601187012564178",
+          "name": "subscriptionType"
+        },
+        {
+          "id": "12:2167503304446987459",
+          "indexId": "9:5901563135765505890",
+          "name": "documentGroupToOneId"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "13:5886194618087988294",
+      "lastPropertyId": "6:7424163286219932139",
+      "name": "SubscriptionRecipient",
+      "properties": [
+        {
+          "id": "1:4686743155351588685",
+          "name": "id"
+        },
+        {
+          "id": "2:5803627187867609087",
+          "name": "actionAllowed"
+        },
+        {
+          "id": "3:1261464330363914771",
+          "name": "actionId"
+        },
+        {
+          "id": "4:4651120166492394085",
+          "name": "recipientId"
+        },
+        {
+          "id": "5:4481850992469574199",
+          "name": "recipientType"
+        },
+        {
+          "id": "6:7424163286219932139",
+          "name": "subscriptionId"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "15:7856743149987709412",
+      "lastPropertyId": "8:5563801730729160137",
+      "name": "Document_Actions_Display",
+      "properties": [
+        {
+          "id": "1:5086746513076834401",
+          "name": "id"
+        },
+        {
+          "id": "2:497875334602469918",
+          "name": "actionDescription"
+        },
+        {
+          "id": "3:5734139977903711478",
+          "name": "actionPriority"
+        },
+        {
+          "id": "4:8915674789835321688",
+          "name": "actionDueDate"
+        },
+        {
+          "id": "5:3434431541341869386",
+          "name": "actionId"
+        },
+        {
+          "id": "6:4930480381060096330",
+          "name": "message"
+        },
+        {
+          "id": "7:4443358324543816588",
+          "name": "link"
+        },
+        {
+          "id": "8:5563801730729160137",
+          "name": "expirationDate"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "16:3280164819450161243",
+      "lastPropertyId": "8:9046414912587729000",
+      "name": "Document_Actions_Dispute",
+      "properties": [
+        {
+          "id": "1:824505070362178932",
+          "name": "id"
+        },
+        {
+          "id": "2:4319359309316309209",
+          "name": "actionDescription"
+        },
+        {
+          "id": "3:5703948919060647506",
+          "name": "actionPriority"
+        },
+        {
+          "id": "4:3937582908382215488",
+          "name": "actionDueDate"
+        },
+        {
+          "id": "5:8750011037784615114",
+          "name": "actionId"
+        },
+        {
+          "id": "6:6839066033001459354",
+          "name": "message"
+        },
+        {
+          "id": "7:5992229298553621491",
+          "name": "link"
+        },
+        {
+          "id": "8:9046414912587729000",
+          "name": "expirationDate"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "17:482103472274976709",
+      "lastPropertyId": "11:5736970333029673726",
+      "name": "Document_Actions_Payment",
+      "properties": [
+        {
+          "id": "1:3230463671951671807",
+          "name": "id"
+        },
+        {
+          "id": "2:1470151983219704838",
+          "name": "actionDescription"
+        },
+        {
+          "id": "3:657532472165143189",
+          "name": "minimumAmountDue"
+        },
+        {
+          "id": "4:4601617466631414206",
+          "name": "actionPriority"
+        },
+        {
+          "id": "5:7340179360320996491",
+          "name": "autoPaid"
+        },
+        {
+          "id": "6:7767556305239773807",
+          "name": "actionDueDate"
+        },
+        {
+          "id": "7:9173388111737563414",
+          "name": "amountDue"
+        },
+        {
+          "id": "8:1830423712938568684",
+          "name": "actionId"
+        },
+        {
+          "id": "9:2612208884041040448",
+          "name": "message"
+        },
+        {
+          "id": "10:3966577837428539802",
+          "name": "link"
+        },
+        {
+          "id": "11:5736970333029673726",
+          "name": "expirationDate"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "18:884313265048995701",
+      "lastPropertyId": "14:3012968183044616318",
+      "name": "Document_Actions_ThirdPartyPayment",
+      "properties": [
+        {
+          "id": "1:8925523204801935716",
+          "name": "id"
+        },
+        {
+          "id": "2:2299355040017407295",
+          "name": "actionDescription"
+        },
+        {
+          "id": "3:7584863137598290754",
+          "name": "beneficiaryAccount"
+        },
+        {
+          "id": "4:113823356891331143",
+          "name": "beneficiaryName"
+        },
+        {
+          "id": "5:3227065410238746629",
+          "name": "minimumAmountDue"
+        },
+        {
+          "id": "6:1735034724053854127",
+          "name": "actionPriority"
+        },
+        {
+          "id": "7:3495134479226689978",
+          "name": "routingNo"
+        },
+        {
+          "id": "8:779527167227607879",
+          "name": "actionDueDate"
+        },
+        {
+          "id": "9:4311131929466344211",
+          "name": "actionId"
+        },
+        {
+          "id": "10:8525930906829582037",
+          "name": "amountDue"
+        },
+        {
+          "id": "11:1524647977156400971",
+          "name": "referenceInfo"
+        },
+        {
+          "id": "12:8749407949122463576",
+          "name": "message"
+        },
+        {
+          "id": "13:7254087123566416856",
+          "name": "link"
+        },
+        {
+          "id": "14:3012968183044616318",
+          "name": "expirationDate"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "19:5739054055583631741",
+      "lastPropertyId": "5:6110328579890483964",
+      "name": "Document_Actions",
+      "properties": [
+        {
+          "id": "1:3379481575930830661",
+          "name": "id"
+        },
+        {
+          "id": "2:1640679007755555771",
+          "indexId": "4:4212388173911049798",
+          "name": "document_actions_thirdPartyPaymentToOneId"
+        },
+        {
+          "id": "3:3686005280446681347",
+          "indexId": "5:5181958473349132020",
+          "name": "document_actions_displayToOneId"
+        },
+        {
+          "id": "4:687105142489621489",
+          "indexId": "6:1172231848763257865",
+          "name": "document_actions_disputeToOneId"
+        },
+        {
+          "id": "5:6110328579890483964",
+          "indexId": "7:2528260003102875591",
+          "name": "document_actions_paymentToOneId"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "20:4747237676748438460",
+      "lastPropertyId": "4:4395769570265849938",
+      "name": "StateSynchronizer",
+      "properties": [
+        {
+          "id": "1:5906328430907733589",
+          "name": "id"
+        },
+        {
+          "id": "2:7906250879543516350",
+          "name": "transmissionId"
+        },
+        {
+          "id": "3:4464423722505380332",
+          "name": "stateTypeId"
+        },
+        {
+          "id": "4:4395769570265849938",
+          "name": "updateDate"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "21:3042395584069057139",
+      "lastPropertyId": "8:7625895947825842577",
+      "name": "InboxSortOrder",
+      "properties": [
+        {
+          "id": "1:1537323700023330612",
+          "name": "id"
+        },
+        {
+          "id": "2:4274608309665412413",
+          "name": "associatedEntity"
+        },
+        {
+          "id": "3:2336382623763319127",
+          "name": "caption"
+        },
+        {
+          "id": "4:6557856034565299859",
+          "name": "category"
+        },
+        {
+          "id": "5:1132713766851068015",
+          "name": "dbColumn"
+        },
+        {
+          "id": "6:7965973518892480114",
+          "name": "defaultOrder"
+        },
+        {
+          "id": "7:5647127726958270758",
+          "name": "isSelected"
+        },
+        {
+          "id": "8:7625895947825842577",
+          "name": "sortOrder"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "22:2537337547285802738",
+      "lastPropertyId": "5:7550139054806814071",
+      "name": "DocTypes",
+      "properties": [
+        {
+          "id": "1:4798997209476860939",
+          "name": "id"
+        },
+        {
+          "id": "2:896032944577083807",
+          "name": "documentType"
+        },
+        {
+          "id": "3:8954003121549857976",
+          "name": "documentTypeName"
+        },
+        {
+          "id": "4:1544381556940495012",
+          "name": "isSelected"
+        },
+        {
+          "id": "5:7550139054806814071",
+          "name": "isSelectedForSmartFolder"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "23:4276177237929877777",
+      "lastPropertyId": "14:296197328122726670",
+      "name": "Payment",
+      "properties": [
+        {
+          "id": "1:7153706990987205491",
+          "name": "id"
+        },
+        {
+          "id": "2:8656761520882079015",
+          "name": "consumerId"
+        },
+        {
+          "id": "3:1016569553535662723",
+          "name": "transmissionId"
+        },
+        {
+          "id": "4:7815356765045476403",
+          "name": "paymentConfirmationNo"
+        },
+        {
+          "id": "5:186573286844263424",
+          "name": "paymentAmount"
+        },
+        {
+          "id": "6:6921547498530386605",
+          "name": "bankId"
+        },
+        {
+          "id": "7:4828325197246249691",
+          "name": "bankName"
+        },
+        {
+          "id": "8:5603227404260810747",
+          "name": "bankAccount"
+        },
+        {
+          "id": "9:5326781138719257686",
+          "name": "cardNumber"
+        },
+        {
+          "id": "10:1075964157821635503",
+          "name": "scheduleDate"
+        },
+        {
+          "id": "11:8348300938993205204",
+          "name": "paymentTypeId"
+        },
+        {
+          "id": "12:3798976361840125017",
+          "name": "paymentStateId"
+        },
+        {
+          "id": "13:7909232343169398244",
+          "name": "createDate"
+        },
+        {
+          "id": "14:296197328122726670",
+          "name": "paymentTrackerId"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "24:762673732628569170",
+      "lastPropertyId": "7:1522194674937911467",
+      "name": "SmartFolder",
+      "properties": [
+        {
+          "id": "1:8751850447149424463",
+          "name": "id"
+        },
+        {
+          "id": "2:8761710657453997146",
+          "name": "order"
+        },
+        {
+          "id": "3:3261867400274547381",
+          "name": "createDate"
+        },
+        {
+          "id": "4:7663907042012440834",
+          "name": "smartFolderId"
+        },
+        {
+          "id": "5:759311570804061848",
+          "name": "smartFolderName"
+        },
+        {
+          "id": "6:360553908886615569",
+          "name": "updateDate"
+        },
+        {
+          "id": "7:1522194674937911467",
+          "name": "isSelected"
+        }
+      ],
+      "relations": [
+        {
+          "id": "3:4454063674974739097",
+          "name": "folderToMany"
+        },
+        {
+          "id": "4:8093263669021696069",
+          "name": "documentGroupToMany"
+        },
+        {
+          "id": "5:8654141059934329741",
+          "name": "docTypesToMany"
+        },
+        {
+          "id": "6:6551190962149275496",
+          "name": "recipentsToMany"
+        }
+      ]
+    }
+  ],
+  "lastEntityId": "24:762673732628569170",
+  "lastIndexId": "10:6092525864977470169",
+  "lastRelationId": "7:6176457110252925904",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [
+    7097169000049980284,
+    99822026451388389,
+    6036009650321825053,
+    8997057410911020556,
+    5004374160519067618
+  ],
+  "retiredIndexUids": [
+    6573727863640187849
+  ],
+  "retiredPropertyUids": [
+    841882712307812851,
+    7297916388406083382,
+    2488548423212268977,
+    9068818430407375132,
+    668049831756091117,
+    7092202852212766201,
+    1226520647672705086,
+    1490335992742005460,
+    5533607762037644614,
+    7177516952807194556,
+    6006742082952399610,
+    2006606152783070277,
+    2444986635157158392,
+    2907090546764374057,
+    6500785025533514623,
+    3285107159048422201,
+    7389027418955079208,
+    1002056649648261310,
+    6688789364537495515,
+    7286166140495285130,
+    5427630588988304427,
+    8452677778293495433,
+    3820807270433516078,
+    7486734937266102044,
+    6501743219495950402,
+    4921619816853252544,
+    4853984213331653127,
+    1517715943379586852,
+    7349072813136311696,
+    4892466265801042867,
+    8753632383584230837,
+    2813838236172718569,
+    1551082130711756679,
+    4541408939294835197,
+    213827138626594267,
+    6860144304247363694,
+    1360311927864695842,
+    7943592414552406998,
+    2548705342498138523,
+    8259153793993030772,
+    2793580560498045979,
+    8613439822895708679,
+    6009121305926146579,
+    8040017374639098159,
+    6228163792320611229,
+    2037008158354101318,
+    5904953307790317461,
+    2515398423562806736
+  ],
+  "retiredRelationUids": [
+    3846037292249578067
+  ],
+  "version": 1
+}

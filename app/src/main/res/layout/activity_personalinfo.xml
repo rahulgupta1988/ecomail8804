@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/screenback">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/headerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="10dp">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/left_arrow_vector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Personal Info"
+                android:textColor="#041C2C"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/img_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_check_vector" />
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/headerview">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="48dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/userFName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/etUSerFName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:hint="First Name"
+                        android:inputType="text"
+                        android:letterSpacing="0.02"
+                        android:maxLines="1"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:textSize="15sp"></EditText>
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/open_sans"
+                    android:letterSpacing="0.01"
+                    android:paddingLeft="3dp"
+                    android:text="Required"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="10sp" />
+
+
+                <FrameLayout
+                    android:id="@+id/frameAlertName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/userAltName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/eUSerAltName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:editable="false"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center_vertical"
+                            android:hint="Alternate first name"
+                            android:inputType="none"
+                            android:letterSpacing="0.02"
+                            android:maxLines="1"
+                            android:text="Alternate Name"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:textSize="15sp"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:drawableRight="@drawable/down_arrow_trai_ic"></EditText>
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                </FrameLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/userMidName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/eUSerMidName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:hint="Middle Name"
+                        android:inputType="text"
+                        android:letterSpacing="0.02"
+                        android:maxLines="1"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:textSize="15sp"></EditText>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/userlastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/eUSerlastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:hint="Last Name"
+                        android:inputType="text"
+                        android:letterSpacing="0.02"
+                        android:maxLines="1"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:textSize="15sp"></EditText>
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/open_sans"
+                    android:letterSpacing="0.01"
+                    android:paddingLeft="3dp"
+                    android:text="Required"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="10sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight=".5">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/prefixWrapper"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/TextLabel">
+
+                                <EditText
+                                    android:id="@+id/etPrefix"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:editable="false"
+                                    android:fontFamily="@font/open_sans"
+                                    android:gravity="center_vertical"
+                                    android:hint="Prefix"
+                                    android:inputType="none"
+                                    android:letterSpacing="0.02"
+                                    android:maxLines="1"
+                                    android:text="Mr"
+                                    android:textColor="#ffffff"
+                                    android:textColorHint="#ffffff"
+                                    android:textSize="15sp"
+                                    android:focusable="false"
+                                    android:drawableRight="@drawable/down_arrow_trai_ic"></EditText>
+                            </android.support.design.widget.TextInputLayout>
+
+
+
+                        </FrameLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight=".5">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/suffixWrapper"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/TextLabel">
+
+                                <EditText
+                                    android:id="@+id/etSuffix"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:editable="false"
+                                    android:fontFamily="@font/open_sans"
+                                    android:gravity="center_vertical"
+                                    android:hint="Suffix"
+                                    android:inputType="none"
+                                    android:letterSpacing="0.02"
+                                    android:maxLines="1"
+                                    android:text="Dr"
+                                    android:textColor="#ffffff"
+                                    android:textColorHint="#ffffff"
+                                    android:textSize="15sp"
+                                    android:focusable="false"
+                                    android:drawableRight="@drawable/down_arrow_trai_ic"></EditText>
+                            </android.support.design.widget.TextInputLayout>
+
+
+
+                        </FrameLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/userEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:hint="Email address"
+                        android:inputType="text"
+                        android:letterSpacing="0.02"
+                        android:maxLines="1"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:textSize="15sp"></EditText>
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/open_sans"
+                    android:letterSpacing="0.01"
+                    android:paddingLeft="3dp"
+                    android:text="Required"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="10sp" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/userAltEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/etAltEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:editable="false"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center_vertical"
+                            android:hint="Alternate Email address"
+                            android:inputType="none"
+                            android:letterSpacing="0.02"
+                            android:maxLines="1"
+                            android:text="Email"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:textSize="15sp"
+                            android:focusable="false"
+                            android:drawableRight="@drawable/down_arrow_trai_ic"></EditText>
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

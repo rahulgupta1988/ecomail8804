@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/contentBG"
+    android:padding="16dp">
+
+
+    <RelativeLayout
+        android:id="@+id/relShowsmartfolder"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/imgShowsmartfolder"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/smartfolder_ic"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/imgShowsmartfolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show smart folder"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="?attr/themeprimarycolor"
+            android:letterSpacing="0.01"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchShowsmartfolder"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/SwitchStyle"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/relShowsmartfolder"
+        android:id="@+id/relNews"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/imgNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/news_vector"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_toRightOf="@+id/imgNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="News"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="?attr/themeprimarycolor"
+            android:letterSpacing="0.01"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"/>
+
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchNews"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/SwitchStyle"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
